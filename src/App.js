@@ -1,20 +1,26 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Questions from "./components/Questions";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Signup from "./components/Signup";
 import Submitted from "./components/Submitted";
+import Home from "./pages/Home";
 
+/**
+ * Main component of the application.
+ * Renders different components based on the current route.
+ * @returns {JSX.Element} App component
+ */
 function App() {
   return (
     <>
-      <Navbar />
-
-      <Hero />
-      <Questions />
-      <Footer />
+      {/* Define routes */}
+      <Routes>
+        {/* Route for the home page */}
+        <Route path="/" element={<Home />} />
+        {/* Route for the signup page */}
+        <Route path="/signup" element={<Signup />} />
+        {/* Route for the submitted page */}
+        <Route path="/submitted" element={<Submitted />} />
+      </Routes>
     </>
   );
 }
