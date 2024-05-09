@@ -93,7 +93,7 @@ const Hero = () => {
                     </div>
                     <div className='relative bottom-[60px] flex-row flex gap-3 text-[20px] text-gray-300'>
                         {carouselItems.map((item, index) => (
-                            <GoDotFill key={index} onClick={() => handleDotClick(index)} className={`cursor-pointer ${index === activeIndex ? 'text-green-600' : 'text-gray-300'}`} />
+                            <GoDotFill key={index} onClick={() => handleDotClick(index)} className={`cursor-pointer hover:text-[#CAD0CB] ${index === activeIndex ? 'text-green-600' : 'text-[#E4E3E3]'}`} />
                         ))}
                     </div>
                     <div className='relative top-[100px] w-[245px] h-[88px] flex-nowrap py-[31px] px-[40px] bg-black  rounded-[100px] flex justify-center items-center hover:bg-[#4E4E4E] text-white hover:scale-110 duration-150'>
