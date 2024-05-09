@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.jpeg";
 
-import Signup from "../pages/Signup";
+
 import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();

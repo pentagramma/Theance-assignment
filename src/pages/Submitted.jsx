@@ -7,6 +7,9 @@ import { useNavigate } from "react-router-dom";
  * Submitted component displays a success message and a countdown timer before redirecting.
  * @returns {JSX.Element} Submitted component
  */
+
+
+
 const Submitted = () => {
   const navigate = useNavigate();
   const [timer, setTimer] = React.useState(5); // Initial timer value

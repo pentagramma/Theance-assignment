@@ -52,7 +52,7 @@ const Questions = () => {
                 </div>
                 <div className='w-[581px] h-[538px] font-abc font-[600] text-[20px] leading-[66px] relative top-16 flex flex-col'>
                     {accordionData.map((accordion, index) => (
-                        <div key={index} className={`flex flex-col mb-4 border-b-2 border-[#D7D7D7] pb-6 ${openAccordion === index ? 'border-[#FFA500]' : ''}`}>
+                        <div key={index} className={`flex flex-col mb-4 ${index !== 4 ? "border-b-2" : ""} border-[#D7D7D7] pb-6 ${openAccordion === index ? 'border-[#FFA500]' : ''}`}>
                             <div className='flex flex-row items-center justify-between cursor-pointer' onClick={() => toggleAccordion(index)}>
                                 <div className='leading-[28px] w-[75%]'>
                                     {accordion.title}
@@ -68,7 +68,7 @@ const Questions = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

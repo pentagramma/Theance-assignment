@@ -10,9 +10,15 @@ import { useNavigate } from "react-router-dom";
  */
 const Signup = () => {
   const navigate = useNavigate();
+  const handleRedirectt = () => {
+    navigate("/");
+  }
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+
 
   /**
    * Handles form submission.
@@ -40,8 +46,8 @@ const Signup = () => {
         </div>
         {/* Close button */}
         <div className="w-[64px] h-[64px] p-5 rounded-full flex justify-center items-center border">
-          <button>
-            <IoMdClose className="w-[32px] h-[32px]" />
+          <button onClick={handleRedirectt}>
+            <IoMdClose className="w-[32px] h-[32px] hover:text-red-600 hover:scale-125 duration-150" />
           </button>
         </div>
       </div>
@@ -97,7 +103,7 @@ const Signup = () => {
               <div className="flex justify-center items-center pt-5">
                 <button
                   type="submit"
-                  className="py-[26.11px] px-[49.61px] w-[417px] h-[77.22px] bg-[#C9C9C9] mt-2 rounded-full text-white font-abc font-[600] text-[18px] hover:bg-black hover:scale-105 duration-150"
+                  className={`py-[26.11px] px-[49.61px] w-[417px] h-[77.22px] bg-[#C9C9C9] mt-2 rounded-full text-white font-abc font-[600] text-[18px] hover:bg-black hover:scale-105 duration-150 ${email && name !== null ? 'bg-black' : ""}`}
                   onClick={handleSubmit}
                 >
                   Submit

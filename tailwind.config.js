@@ -8,7 +8,8 @@ module.exports = {
     fontFamily: {
       abc: ["Manrope"],
       bcd: ["Covered By Your Grace"],
-      cde: ["Questrial"],
+      cde: ["Public Sans"],
+
     }
   },
   plugins: [],

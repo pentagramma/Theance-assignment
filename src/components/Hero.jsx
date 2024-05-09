@@ -30,19 +30,17 @@ const Hero = () => {
     };
 
     return (
-        <div className='flex justify-center items-center w-[1440px] h-[1044px] flex-col relative z-10'>
-            <div className='w-[1233px] h-[886px] justify-center mt-[79px]'>
+        <div className='flex justify-center items-center w-[1440px] h-[1044px] flex-col relative z-10 '>
+            <div className='w-[1233px] h-[886px] justify-center items-center mt-[79px] relative left-[50px]'>
                 <div className='flex justify-center items-center flex-col'>
-                    <div className='w-[197px] h-[28px] flex justify-center items-center font-bcd text-[33px] font-medium text-[#2DA950]'>
+                    <div className='w-[197px] h-[28px] flex justify-center items-center font-bcd text-[33px] font-medium text-[#2DA950] leading-[39.6px] mb-2'>
                         <h3>Success Stories</h3>
                     </div>
                     <div className='flex flex-col text-[56px] justify-center items-center font-abc font-medium'>
-                        <div>
-                            <h1 className=''>Every success journey</h1>
+                        <div className='w-[588px] h-[134px] text-center'>
+                            <h1 className=''>Every success journey we've encontered.</h1>
                         </div>
-                        <div>
-                            <h1>we've encountered.</h1>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -50,7 +48,7 @@ const Hero = () => {
                 <div className='w-[727.49px] h-[596px] relative'>
                     <img src={HeroImage} alt='' className='w-[506.98px] h-[546.27px] rounded-3xl z-0 absolute left-[200px]' />
                     <div className='w-[267.82px] h-[239px] rounded-[27.11px] border p-[30px] relative bg-white shadow-lg flex-col top-[115px] left-[62px]'>
-                        <div className='flex justify-start w-[121px] h-[77px] text-[64px] font-[500]'>
+                        <div className='flex justify-start w-[121px] h-[77px] text-[64px] font-[500] font-cde'>
                             40%
                         </div>
                         <div className='h-[auto] pt-6 font-abc text-[#828282] leading-[23.4px]'>
@@ -62,10 +60,10 @@ const Hero = () => {
                     </div>
                     <div className='w-[290.49px] h-[239px] rounded-[27.11px] border border-[#002E18] p-[35px] relative bg-[#002E18] shadow-lg flex-col top-[115px] left-[499px] text-white flex '>
                         <div className='flex flex-row'>
-                            <div className='font-[500] text-[63.37px] w-[119px] h-[76px] mr-2 font-cde'>
+                            <div className='font-[500] text-[57px] w-[119px] h-[76px] mr-2 font-cde'>
                                 $0.5
                             </div>
-                            <div className='flex items-end font-[500] text-[22.81px] text-[#A6A3A0] relative font-cde'>
+                            <div className='flex items-end font-[500] text-[20px] text-[#A6A3A0] relative font-cde mb-1'>
                                 MILLION
                             </div>
                         </div>
@@ -90,7 +88,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='flex flex-col'>
-                    <div className='w-[398px] h-[192px] font-abc font-[600] text-[35px] bottom-[100px] relative leading-10'>
+                    <div className='w-[398px] h-[192px] font-abc font-[600] text-[35px] bottom-[100px] relative leading-[48px]'>
                         <h2>{carouselItems[activeIndex].title}</h2>
                     </div>
                     <div className='relative bottom-[60px] flex-row flex gap-3 text-[20px] text-gray-300'>
