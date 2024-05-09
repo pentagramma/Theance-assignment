@@ -20,6 +20,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         {/* Route for the submitted page */}
         <Route path="/submitted" element={<Submitted />} />
+
       </Routes>
     </>
   );

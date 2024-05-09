@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Questions from "../components/Questions";
+import Submitted from "../pages/Submitted";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Questions />
       <Footer />
+
     </>
   );
 };

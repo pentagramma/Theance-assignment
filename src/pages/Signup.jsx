@@ -28,12 +28,13 @@ const Signup = () => {
       navigate("/submitted");
     }
     // Handle form submission logic here
+
   };
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center flex-col">
+    <div className="w-screen h-screen flex justify-evenly items-center flex-col">
       {/* Header */}
-      <div className="w-[90%] h-[20%]  flex justify-between items-center flex-row">
+      <div className="w-[90%] h-[20%]  flex justify-between items-start flex-row">
         <div>
           <img src={logo} alt="" className="w[127.94px] h-[47.39px]" />
         </div>
@@ -45,7 +46,7 @@ const Signup = () => {
         </div>
       </div>
       {/* Registration Form */}
-      <div className="w-[588px] h-[539px] flex flex-col justify-center items-center">
+      <div className="w-[588px] h-[539px] flex flex-col justify-center items-center pb-20">
         <div className="w-[588px] h-[178px] flex justify-center items-center flex-col leading-[39.6px]">
           {/* Form Title */}
           <h1 className="font-bcd text-[#2DA950] font-[400] text-[36px]">
