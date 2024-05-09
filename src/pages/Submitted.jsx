@@ -34,7 +34,7 @@ const Submitted = () => {
       <div className="w-screen h-[80%] flex justify-between items-center flex-col">
         {/* Logo */}
         <div className="w-[90%] h-[20%]  flex justify- items-center flex-row">
-          <div>
+          <div className="relative bottom-[10px]">
             <img src={logo} alt="" className="w[127.94px] h-[47.39px]" />
           </div>
         </div>
